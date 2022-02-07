@@ -14,20 +14,20 @@ import transaction from './components/Transaction-history/transaction.json'
 
 function App() {
   return (
-  <>
-    <Profile
-    name={user.name}  
-    tag={user.tag}
-    location={user.location}
-    avatar={user.avatar}
-    stats={user.stats}
-    />
-    <FriendsList friends={friends} />
-    <Statistic title="Upload stats" stats={statistic}/>
+    <>
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <FriendsList friends={friends} />
+      <Statistic title="Upload stats" stats={statistic} />
       <Transaction
         items={transaction}
       />
-  </>
+    </>
   );
 }
 
